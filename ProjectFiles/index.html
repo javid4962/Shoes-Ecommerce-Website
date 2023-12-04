@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iceberg&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,700;1,400&family=Playfair+Display:wght@400;700&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Ecommerce Shoe Shop</title>
+
+</head>
+
+<body>
+    <header id="header">
+        <div id="menu-bar" class="fa fa-bars"></div>
+        <img src="img/BG/bg2.png" class="logo"></img>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">category</button>
+                <div class="dropdown-content">
+                    <a href="index.html">home</a>
+                    <a href="apperel.html">apperel</a>
+                    <a href="performance.html">performance</a>
+                    <a href="running.html">running</a>
+                    <a href="sports.html">sports</a>
+                </div>
+            </div>
+            <a href="#product">Product</a>
+            <a href="#fearured">Fearured</a>
+            <a href="#blog">blog</a>
+            <a href="#news">news</a>
+
+            </div>
+        </nav>
+        <div class="icons">
+            <!-- <a href="#"><i class="fa fa-heart"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-shopping-cart addCart"></i></a> -->
+            register here<a href="#"><i class="fa fa-user login"></i></a>
+        </div>
+    </header>
+
+    <form id="form">
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label for="name">Name (Full Name)</label>
+            <input type="text" placeholder="Enter your Full Name" class="payInput" required>
+            <label for="phone">Phone Number</label>
+            <input type="text" placeholder="Enter your Phone Number" class="payInput" required>
+            <label for="address">Address</label>
+            <input type="text" placeholder="Enter your address" class="payInput" required>
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="img/visa.png" width='40' alt="visa card" class="cardIcon">
+                <img src="img/master.png" width='40' alt="master card" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number" required>
+            <div class="cardInfo">
+                <input type="text" class="payInput sm" placeholder="mm" required>
+                <input type="text" class="payInput sm" placeholder="yyyy" required>
+                <input type="text" class="payInput sm" placeholder="cvv" required>
+            </div>
+            <input class="payButton" type="submit" name="CheckOut!">
+            <span class="close">X</span>
+        </div>
+    </form>
+    <!--end header-->
+    <section class="home" id="home">
+        <div class="slide-container active">
+            <div class="slide ">
+                <div class="content">
+                    <!-- <span>Nike Sport Shoes</span> -->
+                    <h3>Nike Blazer Mid '77 Vintage</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                        Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta
+                        sit iure neque voluptate.
+                    </p>
+                    <a href="#product" class="btn">explore more</a>
+                </div>
+                <div class="image">
+                    <img src="img/slide/1.png" class="shoe">
+                </div>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide ">
+                <div class="content">
+                    <!-- <span>Nike Sport Shoes</span> -->
+                    <h3>Nike Blazer Mid 77 Vintage <span>white & Pine Green</span></h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                        Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta
+                        sit iure neque voluptate.
+                    </p>
+                    <a href="#product" class="btn">explore more</a>
+                </div>
+                <div class="image">
+                    <img src="img/slide/2.png" class="shoe">
+                </div>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide ">
+                <div class="content">
+                    <!-- <span>Nike Sport Shoes</span> -->
+                    <h3>Nike Blazer Mid 77 Suede Team <span> Red (GS)</span></h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                        Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta
+                        sit iure neque voluptate.
+                    </p>
+                    <a href="#product" class="btn">explore more</a>
+                </div>
+                <div class="image">
+                    <img src="img/slide/3.png" class="shoe">
+                </div>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slide ">
+                <div class="content">
+                    <!-- <span>Nike Sport Shoes</span> -->
+                    <h3>NIKE BLAZER MID '77 SUEDE <span>Pine Green/ White-Pine Green</span></h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                        Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta
+                        sit iure neque voluptate.
+                    </p>
+                    <a href="#product" class="btn">explore more</a>
+                </div>
+                <div class="image">
+                    <img src="img/slide/4.png" class="shoe">
+                </div>
+            </div>
+        </div>
+
+        <div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
+        <div id="next" class="fa fa-angle-right" onclick="next();"></div>
+    </section>
+    <!--end home-->
+    <!-- features -->
+    <section class="features">
+        <div class="feature">
+            <img src="img/shipping.png" alt="shipping" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free Worldwide Shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img src="img/return.png" alt="returning" class="featureIcon">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img src="img/gift.png" alt="gift" class="featureIcon">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift card and use coupon codes easyly.</span>
+        </div>
+        <div class="feature">
+            <img src="img/contact.png" alt="contact" class="featureIcon">
+            <span class="featureTitle">CONTACT US</span>
+            <span class="featureDesc">Keep in touch with us via email and support.</span>
+        </div>
+    </section>
+    <!-- end features -->
+    <section class="product" id="product">
+        <h1 class="heading">latest <span>Products</span> #men</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men1.jpg" class="contentImg" alt="">
+                    <h3>ASIAN Men's Wonder-13 Sports Running Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men2.jpg" class="contentImg" alt="">
+                    <h3>ASIAN Men's Superwalk-07 Sports Walking Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men10.jpg" class="contentImg" alt="">
+                    <h3>ASIAN F-04 Running Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men4.jpg" class="contentImg" alt="">
+                    <h3>Red Tape Walking Sports Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men5.jpg" class="contentImg" alt="">
+                    <h3>Campus Mens Shuttle Walking Shoe</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men6.jpg" class="contentImg" alt="">
+                    <h3>Bacca Bucci Champion Road Running Sports Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men7.jpg" class="contentImg" alt="">
+                    <h3>bacca bucci Walking Shoes (Blue)</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men8.jpg" class="contentImg" alt="">
+                    <h3>REEBOK Ree-Glide Running Shoes (Black)</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/men9.jpg" class="contentImg" alt="">
+                    <h3>Sparx Mens Sm-775 Sneaker</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <h1 class="heading">latest <span>Products</span> #women</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women1.jpg" class="contentImg" alt="">
+                    <h3>JQR FAMINA-02 Sports Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women2.jpg" class="contentImg" alt="">
+                    <h3>JQR MOON-03 Sports Running Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women3.jpg" class="contentImg" alt="">
+                    <h3>JQR MOON-02 Sports Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women4.jpg" class="contentImg" alt="">
+                    <h3>JQR FAMINA-01 Sports Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women5.jpg" class="contentImg" alt="">
+                    <h3>Red Tape Womens Rlo215 Walking Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women6.jpg" class="contentImg" alt="">
+                    <h3>ASIAN Women's Elasto-02 Knitted,Sports</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women11.jpg" class="contentImg" alt="">
+                    <h3>Red Tape Women's Walking Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women10.jpg" class="contentImg" alt="">
+                    <h3>Red Tape Women Black Walking Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Walking/women9.jpg" class="contentImg" alt="">
+                    <h3>ASIAN Women's Riya-04 Sports Running,Walking</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <h1 class="heading">latest <span>Products</span> #kids</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids1.jpg" class="contentImg" alt="">
+                    <h3>ARETTO Leaps, Kids Everyday Wear Growing Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids2.jpg" class="contentImg" alt="">
+                    <h3>CAMRO LED-103 Trendy Velcro Casual Indoor/Outdoor Running</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids3.jpg" class="contentImg" alt="">
+                    <h3>KazarMax SKUDO Boy's/Girl's</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids4.jpg" class="contentImg" alt="">
+                    <h3>Liberty Boys Bastian-2e Sneaker</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids5.jpg" class="contentImg" alt="">
+                    <h3>NEOBABY Casual Shoes for 2 Years to 4.5 Years Kids</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids6.jpg" class="contentImg" alt="">
+                    <h3>Liberty Boys S-BOYEXCEA School Uniform Shoe</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids9.jpg" class="contentImg" alt="">
+                    <h3>Hygear Unisex-Child ROMO Walking Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids8.jpg" class="contentImg" alt="">
+                    <h3>RU SHAZZ Casual Shoes for 1.5 Years to 4 Years Kids</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-cart-plus" onclick="alert('product is added to cart')"></a>
+                </div>
+                <div class="content">
+                    <img src="img/Kids/kids12.jpg" class="contentImg" alt="">
+                    <h3>TRASE Boys Sports Running Shoes</h3>
+                    <div class="price">$200 <span>$150</span></div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--end product-->
+    <section class="featured" id="fearured">
+        <h1 class="heading">New <span>Product</span></h1>
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="img/product1/1.jpg" alt="" class="featured-image-1">
+                    <img src="img/product1/2.jpg" alt="" class="featured-image-1">
+                    <img src="img/product1/3.jpg" alt="" class="featured-image-1">
+                    <img src="img/product1/4.jpg" alt="" class="featured-image-1">
+                </div>
+                <div class="big-image">
+                    <img src="img/product1/1.jpg" alt="" class="big-image-1">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Nike Blazer Mid ‘77 Suede Team Red CI1172-601</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                </p>
+                <div class="price">$90 <span>$120</span></div>
+                <a href="#" class="btn">add to cart</a>
+                <a class="btn buy">buy now</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="img/product2/1.jpg" alt="" class="featured-image-2">
+                    <img src="img/product2/2.jpg" alt="" class="featured-image-2">
+                    <img src="img/product2/3.jpg" alt="" class="featured-image-2">
+                    <img src="img/product2/4.jpg" alt="" class="featured-image-2">
+                </div>
+                <div class="big-image">
+                    <img src="img/product2/1.jpg" alt="" class="big-image-2">
+                </div>
+            </div>
+            <div class="content">
+                <h3>NEW Blazer Mid ‘77 Suede Men's Size 10 Pine Green/White-Pine Green CI1172-301</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                </p>
+                <div class="price">$90 <span>$120</span></div>
+                <a href="#" class="btn">add to cart</a>
+                <a href="#" class="btn buy">buy now</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="img/product3/1.jpg" alt="" class="featured-image-3">
+                    <img src="img/product3/2.jpg" alt="" class="featured-image-3">
+                    <img src="img/product3/3.jpg" alt="" class="featured-image-3">
+                    <img src="img/product3/4.jpg" alt="" class="featured-image-3">
+                </div>
+                <div class="big-image">
+                    <img src="img/product3/1.jpg" alt="" class="big-image-3">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Nike Blazer Mid '77 Vintage 'Black Sail' [BQ6806-002] Size 10 -Sneakers NEW!!!</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                </p>
+                <div class="price">$90 <span>$120</span></div>
+                <a href="#" class="btn">add to cart</a>
+                <a href="#" class="btn buy">buy now</a>
+            </div>
+        </div>
+    </section>
+    <section class="newSeason">
+        <div class="nsItem">
+            <img src="img/gallary4.jpeg" alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#home">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="img/gallary5.jpeg" alt="" class="nsImg">
+        </div>
+    </section>
+    <!--end featured-->
+    <section class="blog" id="blog">
+        <h1 class="heading">Team <span>Weblog</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/team/user.jpg" alt="">
+                <h3>Syed Rushimiya</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eos sequi temporibus impedit corporis vero ab exercitationem
+                    dolore voluptatibus, nisi non.
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/team/user.jpg" alt="">
+                <h3>Lokeswarsai</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eos sequi temporibus impedit corporis vero ab exercitationem
+                    dolore voluptatibus, nisi non.
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/team/user.jpg" alt="">
+                <h3>Adithyaram</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eos sequi temporibus impedit corporis vero ab exercitationem
+                    dolore voluptatibus, nisi non.
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa fa-star-half-o"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/team/user.jpg" alt="">
+                <h3>Javid</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eos sequi temporibus impedit corporis vero ab exercitationem
+                    dolore voluptatibus, nisi non.
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end blog-->
+    <section class="news" id="news">
+        <div class="content">
+            <h3>monthly news letter</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga sed itaque ducimus maxime facere nihil expedita non sunt? Nostrum, voluptatem?
+            </p>
+            <form>
+                <textarea name="suggestions" id="suggestion" cols="0" rows="1" placeholder="Make a suggestion"
+                    required></textarea>
+                <input type="email" placeholder=" Enter your email" class="email" to="208x1a0591@khitguntur.ac.in"
+                    required>
+                <input type="submit" value="save" class="btn">
+            </form>
+        </div>
+    </section>
+    <!--end news-->
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Career</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our Blog</h1>
+                <div class="fMail">
+                    <input type="text" class="fInput" placeholder="your@email.com">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="img/facebook.png" alt="" class="fImg">
+                    <img src="img/whatsapp.png" alt="" class="fImg">
+                    <img src="img/twitter.png" alt="" class="fImg">
+                    <img src="img/instagram.png" alt="" class="fImg">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">&copy;All Rights reserved.<span id="year"></span></span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="js/script.js"></script>
