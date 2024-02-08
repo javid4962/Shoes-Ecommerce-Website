@@ -1,4 +1,4 @@
-# EcommersWeb-shoes
+# Ecommerce Web-shoes
 
 Deployment link : https://shoesden.netlify.app/
 
